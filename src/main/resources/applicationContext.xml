@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <broker id="broker"  useShutdownHook="false" useJmx="false" persistent="false" xmlns="http://activemq.apache.org/schema/core"
+    xsi:schemaLocation="http://activemq.apache.org/schema/core  http://activemq.apache.org/schema/core/activemq-core.xsd">
+       <transportConnectors>
+           <transportConnector name="vm" uri="vm://localhost"/>
+           <transportConnector name="mqtt+nio" uri="mqtt+nio://0.0.0.0:1883"/>
+           <transportConnector name="ws" uri="ws://0.0.0.0:1884"/>
+       </transportConnectors>
+    </broker>
+
+</beans>
