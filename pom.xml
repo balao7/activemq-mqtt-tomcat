@@ -11,8 +11,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring.version>4.2.4.RELEASE</spring.version>
-        <activemq.version>5.12.1</activemq.version>
-        <!--<activemq.version>5.13.0</activemq.version>-->
+        <!-- <activemq.version>5.12.1</activemq.version>-->
+        <activemq.version>5.13.0</activemq.version>
     </properties>
     <dependencies>
         <!-- ActiveMQ -->
